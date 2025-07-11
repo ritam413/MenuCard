@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Card</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+
+</head>
+<body class="bg-slate-100 text-gray-800 p-8">
+  <section class="max-w-6xl mx-auto">
+    <!-- Title -->
+    <h1 class="text-4xl font-bold text-center mb-6">Our Menu</h1>
+
+    <!-- Filter Buttons -->
+    <div class="flex justify-center gap-4 mb-10">
+      <button class="px-4 py-2 rounded border border-yellow-500 text-yellow-600 hover:bg-yellow-100" 
+      id="allBtn">All</button>
+
+      <button class="px-4 py-2 rounded border border-yellow-500 text-yellow-600 hover:bg-yellow-100" 
+      id="breakfast">Breakfast</button>
+      
+      <button class="px-4 py-2 rounded border border-yellow-500 text-yellow-600 hover:bg-yellow-100" 
+      id="lunch">Lunch</button>
+
+      <button class="px-4 py-2 rounded border border-yellow-500 text-yellow-600 hover:bg-yellow-100" 
+      id="shakes">Shakes</button>
+    </div>
+
+    <!-- Menu Items Grid -->
+    <div class="grid md:grid-cols-2 gap-10" id="allOptions">
+      
+      <!-- Menu Item -->
+        <div class="flex gap-4 " id="CardSkeleton">
+          <img 
+          src="https://images.pexels.com/photos/1633525/pexels-photo-1633525.jpeg" 
+          alt="item" 
+          class="imageLink w-32 h-24 object-cover rounded shadow-md"
+          >
+            <div>
+              <div
+                id="foodTextContent" 
+                class="breakfast flex justify-between items-center">
+                  <h2 
+                  id="title"
+                  class="font-semibold text-lg" 
+                  >Buttermilk Pancakes</h2>
+                  <span 
+                  id='price' 
+                  class="text-yellow-600 font-bold">Rs 15.99</span>
+              </div>
+              <p 
+                id="description"  
+                class="text-sm mt-1" >I'm baby woke mlkshk wolf bitters live-edge blue bottle.
+              </p>
+            </div>
+        </div>
+    </div>
+  </section>
+
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+    lucide.createIcons()
+</script>
+<script src="script.js"></script>
+</body>
+</html>
+
+
